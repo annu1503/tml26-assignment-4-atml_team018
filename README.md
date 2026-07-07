@@ -2,8 +2,12 @@
 
 **Team:** atml_team018
 
-## Approach
+## Approach 1
 Residual-based copy attack: extract watermark signal from 25 source images by averaging denoised residuals, then inject onto clean targets.
+
+## Final Approach
+
+Use a texture mask plus Kutter Watermark Copy Attack, then evaluate locally to estimate LPIPS score.
 
 ## How to Reproduce
 
@@ -15,7 +19,10 @@ unzip Dataset.zip
 pip install numpy pillow scipy torch torchvision
 
 3. Run pipeline:
-python3 forge_watermark.py
+python3 kutter.py
 
-4. Submit:
-python3 submission.py
+4. Evaluate:
+python3 local_evaluation.py
+
+6. Submit file:
+python3 submission_kutter.py
