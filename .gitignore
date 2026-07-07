@@ -1,0 +1,10 @@
+Dataset.zip
+forged_outputs/
+clean_targets/
+watermarked_sources/
+submission.zip
+__pycache__/
+*.pth
+*.pyc
+.cache/
+.gitattributes
