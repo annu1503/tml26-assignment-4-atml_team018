@@ -16,7 +16,7 @@ hf download SprintML/tml2026_task4 --repo-type dataset --local-dir .
 unzip Dataset.zip
 
 2. Install dependencies:
-pip install numpy pillow scipy torch torchvision
+pip install numpy pillow scipy torch torchvision lpips
 
 3. Run pipeline:
 python3 kutter.py
